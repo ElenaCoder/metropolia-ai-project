@@ -45,6 +45,9 @@ metropolia-ai-project/
 │   └── index.html
 ├── assets/                # solution 2 navigation demo
 │   └── solution2-navigation-demo.gif
+├── health_check/           # Health check functionality
+│   ├── scheduler.py        # Scheduling logic
+│   ├── health.py           # Health-check endpoint
 ├── venv/                  # Virtual environment for Python dependencies
 ├── .env                   # Environment variables (not included in the repo)
 ├── .gitignore             # Git ignored files and directories
@@ -156,16 +159,13 @@ Open `http://127.0.0.1:5000` in your browser.
 
 </details>
 
-<details>
 
-<summary>8. Deployment.</summary>
+## Deployment
 
  The app is deployed on Render's free tier. You can access the live demo here: [English-to-Finnish Translator Web App](https://metropolia-ai-project.onrender.com/)
 
 ❗❗ **Note:** ❗❗
 The app is deployed on **Render's free tier** for demonstration purposes, which comes with some limitations. If the server is inactive, it needs time to wake up before the site starts working. When you visit [English-to-Finnish Translator Web App](https://metropolia-ai-project.onrender.com/), please wait approximately **1-2 minutes** for the server to wake up.
-
- </details>
 
 
 ## Steps to Get a Hugging Face API Token
