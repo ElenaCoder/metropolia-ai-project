@@ -20,10 +20,10 @@ This is a simple **English to Finnish Translator** built using **Flask** on the 
 1. Enter English text in the text field on the page.
 2. Click the "Translate" button to get the Finnish translation.
 
-**Note:**
+❗❗ **Note:** ❗❗
 - This project is hosted on a free-tier server for demonstration purposes.
 - Delays may occur due to server inactivity and model loading times.
-- The server takes approximately **50 seconds** to wake up after inactivity, and the model may take **20 seconds** to load for the first request.
+- The server takes approximately **1-2 minutes** to wake up after inactivity, and the model may take **20 seconds** to load for the first request.
 
 ## Project Structure
 The project uses a layered architecture for better modularity and scalability.
@@ -44,7 +44,7 @@ metropolia-ai-project/
 ├── templates/             # HTML templates for the frontend
 │   └── index.html
 ├── assets/                # solution 2 navigation demo
-│   └── solution1-navigation-demo2.gif
+│   └── solution-navigation-demo2.gif
 ├── venv/                  # Virtual environment for Python dependencies
 ├── .env                   # Environment variables (not included in the repo)
 ├── .gitignore             # Git ignored files and directories
@@ -162,8 +162,8 @@ Open `http://127.0.0.1:5000` in your browser.
 
  The app is deployed on Render's free tier. You can access the live demo here: [English-to-Finnish Translator Web App](https://metropolia-ai-project.onrender.com/)
 
-**Note:**
-The app is deployed on Render's free tier for demonstration purposes, which has some limitations. The server may need to wake up if it's inactive. If you see a **502 error**, this is normal—please wait for about **1 minute** and **refresh** the page to try again.
+❗❗ **Note:** ❗❗
+The app is deployed on **Render's free tier** for demonstration purposes, which comes with some limitations. If the server is inactive, it needs time to wake up before the site starts working. When you visit [English-to-Finnish Translator Web App](https://metropolia-ai-project.onrender.com/), please wait approximately **1-2 minutes** for the server to wake up.
 
  </details>
 
@@ -231,7 +231,7 @@ python app.py
 
 Explore a sneak peek of the **English to Finnish Translator - Solution 1** project with this animated GIF showcasing key features and the user interface.
 
-![UI project GIF](./assets/solution1-navigation-demo.gif)
+![UI project GIF](./assets/solution2-navigation-demo.gif)
 
 ## Contact
 For questions or feedback, feel free to reach out:
