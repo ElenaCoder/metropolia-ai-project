@@ -44,7 +44,7 @@ metropolia-ai-project/
 ├── templates/             # HTML templates for the frontend
 │   └── index.html
 ├── assets/                # solution 2 navigation demo
-│   └── solution-navigation-demo2.gif
+│   └── solution2-navigation-demo.gif
 ├── venv/                  # Virtual environment for Python dependencies
 ├── .env                   # Environment variables (not included in the repo)
 ├── .gitignore             # Git ignored files and directories
@@ -224,12 +224,12 @@ python app.py
 
 
 ## Known Limitations
- - **Server delays:** Hosted on a free-tier server, which may cause delays after inactivity (~50 seconds).
+ - **Server delays:** Hosted on a free-tier server, which may cause delays after inactivity (1-2 minutes).
  - **Model loading time:** The translation model takes ~20 seconds to load for the first request.
 
 ## Project preview
 
-Explore a sneak peek of the **English to Finnish Translator - Solution 1** project with this animated GIF showcasing key features and the user interface.
+Explore a sneak peek of the **English to Finnish Translator - Solution 2** project with this animated GIF showcasing key features and the user interface.
 
 ![UI project GIF](./assets/solution2-navigation-demo.gif)
 
