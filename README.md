@@ -23,7 +23,7 @@ This is a simple **English to Finnish Translator** built using **Flask** on the 
 ❗❗ **Note:** ❗❗
 - This project is hosted on a free-tier server for demonstration purposes.
 - Delays may occur due to server inactivity and model loading times.
-- The server takes approximately **1-2 minutes** to wake up after inactivity, and the model may take **20 seconds** to load for the first request.
+- Please note that the server may require **1-2 minutes** to initialize after periods of inactivity due to free-tier hosting limitations. And the translation model may take **20 seconds** to load for the first request.
 
 ## Project Structure
 The project uses a layered architecture for better modularity and scalability.
@@ -72,7 +72,7 @@ This solution uses the Helsinki-NLP/opus-mt-en-fi translation model from Hugging
 </details>
 
 <details>
-<summary>Solution 2 (*current): Hugging Face Inference API -- For Local and Deployment</summary>
+<summary>Solution 2 (current implementation): Hugging Face Inference API -- For Local and Deployment</summary>
 This solution utilizes the Hugging Face Inference API, offloading the translation model to Hugging Face’s servers.
 
 **Advantages:**
