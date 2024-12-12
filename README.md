@@ -1,7 +1,7 @@
 # English to Finnish Translator
 
 ## Overview
-This is a simple *English to Finnish Translator* built using **Flask** on the backend and modern **JavaScript** on the frontend. The app allows users to input English text, translates it to Finnish using the **Helsinki-NLP Opus-MT model**, and displays the translated text on the same page without reloading. The solution leverages Flask's routing and middleware capabilities, the Hugging Face Transformers library for translation, and JavaScript's fetch API for dynamic updates.
+This is a simple **English to Finnish Translator** built using **Flask** on the backend and modern **JavaScript** on the frontend. The app allows users to input English text, translates it to Finnish using the **Helsinki-NLP Opus-MT model**, and displays the translated text on the same page without reloading. The solution leverages Flask's routing and middleware capabilities, the Hugging Face Transformers library for translation, and JavaScript's fetch API for dynamic updates.
 
 ## Features
 - Translate text from English to Finnish using the Helsinki-NLP/opus-mt-en-fi model from Hugging Face.
@@ -16,6 +16,7 @@ This is a simple *English to Finnish Translator* built using **Flask** on the ba
 ## How to Use
 1. Enter English text in the text field on the page.
 2. Click the "Translate" button to get the Finnish translation.
+
 **Note:**
 - This project is hosted on a free-tier server for demonstration purposes.
 - Delays may occur due to server inactivity and model loading times.
@@ -82,7 +83,7 @@ This solution utilizes the Hugging Face Inference API, offloading the translatio
 </details>
 
 
-## How to Run Locally with Solution 2: Hugging Face Inference API (For Local and Deployment)
+## How to Run Locally with Solution 2:
 
 <details>
 
@@ -112,11 +113,8 @@ source venv/bin/activate      # macOS/Linux
 
 If you don’t already have a token, follow these steps:
 - Sign up or log in to [Hugging Face](https://huggingface.co/).
-- Generate an API token in your account settings under Access Tokens.
-- Save the token in a .env file in the project root as follows:
-```
-HUGGING_FACE_API_TOKEN=your_api_token_here
-```
+- Generate an API token in your account settings under **Access Tokens**.
+
 For detailed steps, refer to the section **Steps to Get a Hugging Face API Token.**
 </details>
 
@@ -150,6 +148,7 @@ python app.py
 <details>
 
 <summary>7. Access the app:</summary>
+
 Open `http://127.0.0.1:5000` in your browser.
 
 </details>
@@ -158,7 +157,10 @@ Open `http://127.0.0.1:5000` in your browser.
 
 <summary>8. Deployment.</summary>
 
- The app is deployed on Render's free tier. You can access the live demo here:[English-to-Finnish Translator Web App](https://metropolia-ai-project.onrender.com/)
+ The app is deployed on Render's free tier. You can access the live demo here: [English-to-Finnish Translator Web App](https://metropolia-ai-project.onrender.com/)
+
+**Note:**
+The app is deployed on Render's free tier for demonstration purposes, which has some limitations. The server may need to wake up if it's inactive. If you see a **502 error**, this is normal—please wait for about **1 minute** and **refresh** the page to try again.
 
  </details>
 
