@@ -1,0 +1,46 @@
+# Virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables and configuration
+.env
+.env.*
+
+# Flask debug files
+instance/
+*.sqlite3
+*.db
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Static assets
+static/css/*.css.map
+static/js/*.js.map
+
+# Byte-compiled files and coverage reports
+*.coverage
+.coverage.*
+*.cover
+*.log
+*.dat
+*.out
+
+# Other temporary files
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
