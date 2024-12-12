@@ -1,6 +1,7 @@
 const form = document.getElementById("translateForm");
 const resultDiv = document.getElementById("result");
 const errorDiv = document.getElementById("error");
+const loadingIndicator = document.getElementById("loading-indicator");
 
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -17,9 +18,10 @@ form.addEventListener("submit", async (event) => {
 
     resultDiv.textContent = "Translating...";
     resultDiv.classList.remove("d-none");
+    loadingIndicator.style.display = "block"; // Show the loading indicator
 
     try {
-        const response = await fetch("/translate", {
+        const response = await fetchWithRetry("/translate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ text }),
@@ -30,6 +32,7 @@ form.addEventListener("submit", async (event) => {
             resultDiv.textContent = `Translation: ${data.translated_text}`;
             resultDiv.classList.remove("alert-danger");
             resultDiv.classList.add("alert-success");
+            resultDiv.classList.remove("d-none");
         } else {
 
             let userFriendlyMessage;
@@ -45,5 +48,23 @@ form.addEventListener("submit", async (event) => {
     } catch (error) {
         errorDiv.textContent = "Error: Unable to connect to the server.";
         errorDiv.classList.remove("d-none");
+    } finally {
+        loadingIndicator.style.display = "none"; // Hide the loading indicator
     }
 });
+
+/**
+ * Helper function to handle retries for 502 errors
+ */
+async function fetchWithRetry(url, options, retries = 5, delay = 10000) {
+    for (let attempt = 0; attempt < retries; attempt++) {
+        const response = await fetch(url, options);
+        if (response.status === 502) {
+            console.warn(`Server is waking up. Retrying in ${delay / 1000} seconds...`);
+            await new Promise((resolve) => setTimeout(resolve, delay));
+        } else {
+            return response;
+        }
+    }
+    throw new Error("Maximum retry attempts reached.");
+}
