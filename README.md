@@ -123,20 +123,20 @@ For detailed steps, refer to the section **Steps to Get a Hugging Face API Token
 
 <details>
 
-<summary>4. Install dependencies:</summary>
-
-```
-pip install -r requirements.txt
-```
-</details>
-
-<details>
-
-<summary>5. Set up environment variables:</summary>
+<summary>4. Set up environment variables:</summary>
 
   - Create a `.env` file in the root directory.
   - Add your Hugging Face API token: `HUGGING_FACE_API_TOKEN=your_token_here`
 
+</details>
+
+<details>
+
+<summary>5. Install dependencies:</summary>
+
+```
+pip install -r requirements.txt
+```
 </details>
 
 <details>
@@ -174,7 +174,7 @@ If you don't already have a Hugging Face API token, follow these steps:
 
 <summary>1. Sign Up:</summary>
 
-- Go to Hugging Face and create a free account if you don't already have one.
+- Go to [Hugging Face](https://huggingface.co/) and create a free account if you don't already have one.
 
 </details>
 
@@ -203,7 +203,7 @@ If you don't already have a Hugging Face API token, follow these steps:
 
 <summary>4. Save the Token:</summary>
 
-- Create a file named .env in the project root directory if it doesn’t already exist.
+- Create a file named `.env` in the project root directory if it doesn’t already exist.
 - Add the following line to the `.env` file:
 ```
 HUGGING_FACE_API_TOKEN=your_api_token_here
