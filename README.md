@@ -1,3 +1,6 @@
+🔔 🦄🦄🦄 🔔
+---
+
 # English to Finnish Translator
 
 ## Overview
@@ -172,6 +175,7 @@ If you don't already have a Hugging Face API token, follow these steps:
 <summary>1. Sign Up:</summary>
 
 - Go to Hugging Face and create a free account if you don't already have one.
+
 </details>
 
 <details>
@@ -193,7 +197,7 @@ If you don't already have a Hugging Face API token, follow these steps:
   - Set the role to read.
 - Copy the generated token.
 
-
+</details>
 
 <details>
 
@@ -206,7 +210,7 @@ HUGGING_FACE_API_TOKEN=your_api_token_here
 ```
 Replace **your_api_token_here** with the token you copied in the previous step.
 
-
+</details>
 
 <details>
 
@@ -222,6 +226,12 @@ python app.py
 ## Known Limitations
  - **Server delays:** Hosted on a free-tier server, which may cause delays after inactivity (~50 seconds).
  - **Model loading time:** The translation model takes ~20 seconds to load for the first request.
+
+## Project preview
+
+Explore a sneak peek of the **English to Finnish Translator - Solution 1** project with this animated GIF showcasing key features and the user interface.
+
+![UI project GIF](./assets/solution1-navigation-demo.gif)
 
 ## Contact
 For questions or feedback, feel free to reach out:
